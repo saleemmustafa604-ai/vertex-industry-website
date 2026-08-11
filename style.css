@@ -14,13 +14,17 @@
   object-fit: cover;
   object-position: center;
 }
-.product-mark {
-  overflow: hidden;
-}
 
 .product-mark img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
+  
+  /* PICHLA CODE (jo badalna hai):
+  object-fit: cover; 
+  */
+
+  /* NAYA CODE (is se replace karein): */
+  object-fit: contain; /* Ye image ko pura box ke andar fit karega baghair kaate */
+  
+  object-position: center; /* Image center mein rahe */
 }
