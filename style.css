@@ -28,3 +28,25 @@
   
   object-position: center; /* Image center mein rahe */
 }
+/* --- MOBILE FIXES FOR VERTEX INDUSTRY --- */
+
+/* 1. Fix Image Cropping & Cutoffs */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+/* 2. Container Overflow Protection */
+.hero-card, 
+.product-card, 
+.product-image,
+.ticker-wrapper {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+/* 3. Smooth Text Scrolling */
+.marquee, .ticker {
+  white-space: nowrap;
+}
