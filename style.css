@@ -118,3 +118,81 @@ button.menu {
   color: #fff;
   cursor: pointer;
 }
+/* 1. Top Header Layout Lock (Logo aur 3-Lines Ek Line Mein) */
+header.nav {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 15px 20px !important;
+  background-color: #000 !important;
+  position: relative !important;
+  z-index: 1000 !important;
+}
+
+header.nav .logo {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+header button.menu {
+  background: none !important;
+  border: none !important;
+  font-size: 26px !important;
+  color: #fff !important;
+  cursor: pointer !important;
+}
+
+/* 2. Side Panel / Drawer Menu Style */
+header nav#mobileNav {
+  position: fixed !important;
+  top: 0 !important;
+  right: -280px !important; /* Shuru mein screen se bahar hidden rahega */
+  width: 250px !important;   /* Sleek width space */
+  height: 100vh !important;
+  background-color: #0d0d0d !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 25px 20px !important;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.7) !important;
+  transition: right 0.3s ease-in-out !important; /* Smooth sliding */
+  z-index: 9999 !important;
+}
+
+/* Jab click hoga toh Side se Slide hokar khulega */
+header nav#mobileNav.active {
+  right: 0 !important;
+}
+
+/* Inside Drawer Header & Close Button */
+.menu-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding-bottom: 15px !important;
+  margin-bottom: 20px !important;
+  border-bottom: 1px solid #222 !important;
+  color: #888 !important;
+  font-size: 12px !important;
+  letter-spacing: 1px !important;
+}
+
+.close-btn {
+  background: none !important;
+  border: none !important;
+  color: #fff !important;
+  font-size: 20px !important;
+  cursor: pointer !important;
+}
+
+/* Links inside Drawer */
+header nav#mobileNav a {
+  color: #fff !important;
+  padding: 12px 0 !important;
+  text-decoration: none !important;
+  font-size: 16px !important;
+  border-bottom: 1px solid #1a1a1a !important;
+}
