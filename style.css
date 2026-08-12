@@ -120,4 +120,43 @@ img {
     <span>WORLDWIDE SHIPPING</span>
     <span>PRIVATE LABEL</span>
   </div>
-</div>
+</div>/* Ticker Outer Box */
+.ticker {
+  width: 100%;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  background-color: #0d0d0d;
+  padding: 14px 0;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+/* Inner Moving Wrapper */
+.ticker-track {
+  display: inline-flex !important;
+  align-items: center;
+  white-space: nowrap !important;
+  animation: marqueeScroll 12s linear infinite !important;
+  will-change: transform;
+}
+
+/* Text and Dot Spacing */
+.ticker-track span {
+  display: inline-block !important;
+  padding: 0 18px !important; /* Space between text */
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+  color: #ffffff !important;
+  text-transform: uppercase;
+}
+
+/* Smooth Auto-Slide Animation */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
