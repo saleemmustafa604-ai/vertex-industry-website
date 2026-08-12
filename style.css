@@ -74,3 +74,31 @@ img {
     line-height: 1.2;
   }
 }
+/* WHY CHOOSE SECTION KO BARA KARNA HA */
+
+/* Section ke containers ko "Elite Operations" ke barabar space dein */
+.why-choose {
+  padding-top: 150px;       /* Top padding ko bara karein taake section upar se khula dikhe */
+  padding-bottom: 150px;    /* Bottom padding ko bhi bara karein */
+}
+
+/* "Why Choose" wale H2 heading text ko bold aur bara karein */
+.why-choose h2 {
+  font-size: 8rem;        /* Text ka size bohot bara karein (H1 ki tarah) */
+  font-weight: 900;       /* Sab se bold font weight use karein */
+  text-transform: uppercase;  /* Saare letters ko bara karein */
+  line-height: 1.1;       /* Line spacing ko kam karein taake text close ho */
+}
+
+/* "Vertex" wale text (jo bold aur italic hai) ko styling dein */
+.why-choose h2 span {
+  font-weight: 900;       /* "Vertex" text ko sab se bold karein */
+  font-style: italic;     /* Italic style dein */
+}
+
+/* "03 / The Vertex Standard" text ka font size bara karein */
+.why-choose .standard-text {
+  font-size: 2rem;      /* Is text ka size bara karein (e.g., from image 10) */
+  font-weight: 500;     /* Thora bold weight */
+  margin-bottom: 20px;   /* Thora space dein niche heading se */
+}
