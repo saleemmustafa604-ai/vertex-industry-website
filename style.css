@@ -188,11 +188,47 @@ header nav#mobileNav.active {
   cursor: pointer !important;
 }
 
-/* Links inside Drawer */
+* Links inside Drawer */
 header nav#mobileNav a {
   color: #fff !important;
   padding: 12px 0 !important;
   text-decoration: none !important;
   font-size: 16px !important;
-  border-bottom: 1px solid #1a1a1a !important;
+  border-bottom: 1px solid #1a1a1a !important;/
+}
+/* ہیڈر کو ایک لائن میں لانے اور سپیس دینے کے لیے */
+header.nav {
+  display: flex !important;
+  justify-content: space-between !important; /* logo بائیں اور ☰ دائیں طرف جائے گا */
+  align-items: center !important; /* دونوں چیزیں ایک سیدھ (center) میں رہیں گی */
+  width: 100% !important;
+  padding: 15px 30px !important;
+  background-color: #000000 !important; /* کالا بیک گراؤنڈ تاکہ سفید لوگو صاف نظر آئے */
+  box-sizing: border-box !important;
+}
+
+/* VERTEX INDUSTRY لوگو کا سٹائل */
+header.nav .logo {
+  font-size: 22px !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  letter-spacing: 2px !important;
+  white-space: nowrap !important; /* نام کو ٹوٹنے سے روکے گا */
+}
+
+header.nav .logo span {
+  font-weight: 300 !important;
+  color: #aaaaaa !important; /* INDUSTRY تھوڑا لائٹ نظر آئے گا */
+}
+
+/* 3 لائناں (☰) دائیں سائیڈ پر رکھنے کا سٹائل */
+header.nav button.menu {
+  font-size: 28px !important;
+  background: transparent !important;
+  border: none !important;
+  color: #ffffff !important;
+  cursor: pointer !important;
+  display: block !important;
+  margin: 0 !important;
 }
