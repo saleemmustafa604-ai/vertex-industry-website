@@ -34,12 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 function toggleMenu() {
-  const navLinks = document.querySelector('nav');
-  navLinks.classList.toggle('active');
-}
-function toggleMenu() {
-  const navMenu = document.querySelector('header nav');
-  const header = document.querySelector('header');
-  navMenu.classList.toggle('active');
-  header.classList.toggle('menu-open');
+  const navMenu = document.getElementById('mobileNav') || document.querySelector('header nav');
+  if (navMenu) {
+    navMenu.classList.toggle('active');
+  }
 }
