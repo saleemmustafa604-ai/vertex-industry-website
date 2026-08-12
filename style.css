@@ -261,3 +261,35 @@ header nav#mobileNav a {
   font-weight: bold;
   letter-spacing: 1px;
 }
+/* Header Flexbox Settings (Logo Left par, Menu Right par) */
+header.nav {
+  display: flex;
+  justify-content: space-between; /* Is se Logo Left aur Menu Right ho jayega */
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #000000; /* Ya aapka jo bhi dark background hai */
+}
+
+/* Logo Bada Karne Ke Liye */
+.logo {
+  font-size: 24px; /* Pehle se bada text */
+  font-weight: 900;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+
+.logo span {
+  font-weight: 400; /* INDUSTRY thoda light look ke liye, ya ise bhi bold rakh sakte hain */
+  color: #cccccc;
+}
+
+/* 3-Lines Hamburger Menu Icon (Right Side) */
+button.menu {
+  font-size: 28px; /* Icon thoda saaf aur bada dikhane ke liye */
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 5px;
+}
