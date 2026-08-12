@@ -13,10 +13,19 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Index.html ke header ko is tarah update karein -->
-<header class="nav" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-  
+<<header class="nav">
   <a class="logo" href="#home">VERTEX <span>INDUSTRY</span></a>
+  
+  <nav id="navMenu">
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Yeh 3-lines menu button hai -->
+  <button class="menu" aria-label="Menu" onclick="toggleMenu()">☰</button>
+</header>
   
   <!-- Yeh line aapke 3-line menu button ko wapas layegi -->
   <button class="menu" aria-label="Menu" onclick="toggleMenu()" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #fff;">☰</button>

@@ -196,3 +196,84 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* 1. Mobile screen cut hone aur scrolling masla fix karne ke liye */
+html, body {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* 2. Desktop Par Menu Links Normal Dikhne Ke Liye */
+header.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+button.menu {
+  display: none; /* Desktop par 3-lines button hide rahega */
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 3. Mobile Screens Ke Liye CSS (Width Adjust & Menu Toggle) */
+@media (max-width: 768px) {
+  /* Mobile par 3-lines button show hoga */
+  button.menu {
+    display: block !important;
+  }
+
+  /* Mobile par normal menu links tab tak hidden rahenge jab tak click na ho */
+  header nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid #222;
+    z-index: 999;
+  }
+
+  /* Jab 3-lines button dabayein toh menu khulega */
+  header nav.active {
+    display: flex !important;
+  }
+
+  header nav a {
+    padding: 12px 0;
+    border-bottom: 1px solid #222;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Buttons aur Hero Section width mobile fix */
+  .hero-copy > div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .hero-copy a {
+    width: 100% !important;
+    text-align: center;
+  }
+}
