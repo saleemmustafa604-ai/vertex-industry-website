@@ -74,3 +74,7 @@ img {
     line-height: 1.2;
   }
 }
+/* Contact section ko header ke neeche push karne ke liye */
+#contact {
+  padding-top: 100px; /* Ya 120px dein taake header text ko chhupaye na */
+}
