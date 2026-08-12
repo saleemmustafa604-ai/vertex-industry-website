@@ -105,3 +105,19 @@ img {
     font-size: 16px;
   }
 }
+<div class="ticker">
+  <div class="ticker-track">
+    <span>PREMIUM QUALITY</span>
+    <span>CUSTOM ORDERS</span>
+    <span>FAST TURNAROUND</span>
+    <span>WORLDWIDE SHIPPING</span>
+    <span>PRIVATE LABEL</span>
+    
+    <!-- Duplicate for seamless infinite loop -->
+    <span>PREMIUM QUALITY</span>
+    <span>CUSTOM ORDERS</span>
+    <span>FAST TURNAROUND</span>
+    <span>WORLDWIDE SHIPPING</span>
+    <span>PRIVATE LABEL</span>
+  </div>
+</div>
