@@ -232,3 +232,87 @@ header.nav button.menu {
   display: block !important;
   margin: 0 !important;
 }
+/* Header Layout Fix: Logo Left, 3 Lines Right */
+header.header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 15px 30px !important;
+  background-color: #000000 !important;
+  position: relative !important;
+  z-index: 100 !important;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  letter-spacing: 1px !important;
+}
+
+/* 3 Lines Hamburger Button (Right Side) */
+.hamburger-btn {
+  font-size: 28px !important;
+  background: transparent !important;
+  border: none !important;
+  color: #ffffff !important;
+  cursor: pointer !important;
+}
+
+/* Side Menu Panel - Normal Screen par Chhupa (Hidden) rahega */
+.nav-menu {
+  position: fixed !important;
+  top: 0 !important;
+  right: -100% !important; /* Screen ke bahar chhupa diya */
+  left: auto !important;
+  width: 300px !important;
+  height: 100vh !important;
+  background-color: #0d0d0d !important;
+  padding: 25px !important;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.5) !important;
+  transition: right 0.3s ease-in-out !important;
+  z-index: 9999 !important;
+}
+
+/* Jab 3 lines par click karenge tabhi yeh samne aayega */
+.nav-menu.active {
+  right: 0 !important;
+}
+
+/* Menu ke andar wale links ki styling */
+.nav-menu ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin-top: 40px !important;
+}
+
+.nav-menu ul li {
+  margin-bottom: 20px !important;
+}
+
+.nav-menu ul li a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  display: block !important;
+}
+
+/* Close (X) button inside menu */
+.close-btn {
+  background: transparent !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-size: 24px !important;
+  cursor: pointer !important;
+}
+
+.menu-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  color: #888888 !important;
+  border-bottom: 1px solid #333 !important;
+  padding-bottom: 15px !important;
+}
