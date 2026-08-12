@@ -78,3 +78,30 @@ img {
 #contact {
   padding-top: 100px; /* Ya 120px dein taake header text ko chhupaye na */
 }
+@media (max-width: 768px) {
+  header nav {
+    display: none; /* Normal state mein hidden */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+    z-index: 1000;
+  }
+
+  /* Jab 3-lines par click hoga tab dikhega */
+  header nav.active {
+    display: flex !important;
+  }
+
+  header nav a {
+    padding: 12px 0;
+    border-bottom: 1px solid #222;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+}

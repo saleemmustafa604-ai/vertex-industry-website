@@ -37,3 +37,9 @@ function toggleMenu() {
   const navLinks = document.querySelector('nav');
   navLinks.classList.toggle('active');
 }
+function toggleMenu() {
+  const navMenu = document.querySelector('header nav');
+  const header = document.querySelector('header');
+  navMenu.classList.toggle('active');
+  header.classList.toggle('menu-open');
+}
