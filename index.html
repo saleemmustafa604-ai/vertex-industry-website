@@ -13,21 +13,31 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="nav">
-  <a class="logo" href="#home">VERTEX <span>INDUSTRY</span></a>
-  <button class="menu" aria-label="Menu" onclick="toggleMenu()">☰</button>
-
-  <nav id="mobileNav">
-    <div class="menu-header">
-      <span>MENU</span>
-      <button class="close-btn" onclick="toggleMenu()">✕</button>
-    </div>
-    <a href="#products" onclick="toggleMenu()">Products</a>
-    <a href="#services" onclick="toggleMenu()">Services</a>
-    <a href="#why" onclick="toggleMenu()">Why Us</a>
-    <a href="#contact" onclick="toggleMenu()">Contact</a>
-  </nav>
+<!-- Header mein sirf 3 lines wala button rahega -->
+<header class="header">
+  <div class="logo">VERTEX</div>
+  
+  <!-- 3 lines hamburger icon -->
+  <button class="hamburger-btn" id="openMenu">
+    ☰
+  </button>
 </header>
+
+<!-- Yeh side menu default mein chhupa (hidden) rahega -->
+<div class="nav-menu" id="navMenu">
+  <div class="menu-header">
+    <span>MENU</span>
+    <!-- Band karne ke liye Cross (X) button -->
+    <button class="close-btn" id="closeMenu">✕</button>
+  </div>
+
+  <ul class="menu-links">
+    <li><a href="#products">PRODUCTS</a></li>
+    <li><a href="#services">SERVICES</a></li>
+    <li><a href="#why-us">WHY US</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</div>
 
 <main>
 <section id="home" class="hero">

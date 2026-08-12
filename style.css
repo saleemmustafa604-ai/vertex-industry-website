@@ -196,3 +196,68 @@ header nav#mobileNav a {
   font-size: 16px !important;
   border-bottom: 1px solid #1a1a1a !important;
 }
+/* 3 lines wala button */
+.hamburger-btn {
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Side Menu - Normal screen par chhupa rahega */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Screen se bahar hidden rahega */
+  width: 280px;
+  height: 100vh;
+  background-color: #0d0d0d;
+  color: #fff;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Jab click karenge toh menu samne aayega */
+.nav-menu.active {
+  left: 0; 
+}
+
+/* Header inside menu */
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Links Style */
+.menu-links {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-links li {
+  margin-bottom: 25px;
+}
+
+.menu-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

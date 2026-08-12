@@ -39,3 +39,16 @@ function toggleMenu() {
     navMenu.classList.toggle('active');
   }
 }
+const openMenuBtn = document.getElementById('openMenu');
+const closeMenuBtn = document.getElementById('closeMenu');
+const navMenu = document.getElementById('navMenu');
+
+// 3 lines par click karne par menu khulega
+openMenuBtn.addEventListener('click', () => {
+  navMenu.classList.add('active');
+});
+
+// 'X' par click karne par menu band ho jayega
+closeMenuBtn.addEventListener('click', () => {
+  navMenu.classList.remove('active');
+});
