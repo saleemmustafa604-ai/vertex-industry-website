@@ -390,37 +390,3 @@ header.header {
     transform: translateX(-50%); /* Moves seamlessly without resetting bugs */
   }
 }
-/* Ticker Double Text & Overlap Fix */
-.ticker {
-  background-color: #000000 !important;
-  width: 100% !important;
-  overflow: hidden !important;
-  white-space: nowrap !important;
-  padding: 10px 0 !important;
-  position: relative !important;
-  z-index: 10 !important;
-}
-
-.ticker-track {
-  display: inline-block !important;
-  white-space: nowrap !important;
-  animation: ticker-move 18s linear infinite !important;
-}
-
-.ticker-track span {
-  display: inline-block !important;
-  color: #ffffff !important;
-  font-size: 13px !important;
-  font-weight: 600 !important;
-  letter-spacing: 1px !important;
-  margin: 0 12px !important;
-}
-
-@keyframes ticker-move {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
