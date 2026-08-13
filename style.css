@@ -316,3 +316,36 @@ header.header {
   border-bottom: 1px solid #333 !important;
   padding-bottom: 15px !important;
 }
+/* Ticker Sliding Animation & Spacing Fix */
+.ticker {
+  background-color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+.ticker-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker-slide 20s linear infinite;
+}
+
+.ticker-track span {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin: 0 10px; /* Text ke beech space */
+}
+
+@keyframes ticker-slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
