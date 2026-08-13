@@ -299,39 +299,20 @@ header.header {
   display: block !important;
 }
 
-/* Ticker Section - Black Background & White Text */
-.ticker {
-  background-color: #000000 !important; /* بلیک پٹی */
-  color: #ffffff !important;           /* وائٹ ٹیکسٹ */
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-  padding: 14px 0;
-  margin-top: 20px;
-  box-sizing: border-box;
-}
-
-.ticker-track {
-  display: inline-block;
-  white-space: nowrap;
-  animation: ticker-slide 20s linear infinite; /* سلائیڈنگ اینیمیشن */
-}
-
-.ticker-track span {
+/* Close (X) button inside menu */
+.close-btn {
+  background: transparent !important;
+  border: none !important;
   color: #ffffff !important;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 0 8px; /* ورڈز کے درمیان جگہ */
+  font-size: 24px !important;
+  cursor: pointer !important;
 }
 
-/* ٹیکسٹ کو رائٹ سے لیفٹ موو کرنے کے لیے */
-@keyframes ticker-slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.menu-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  color: #888888 !important;
+  border-bottom: 1px solid #333 !important;
+  padding-bottom: 15px !important;
 }
-
