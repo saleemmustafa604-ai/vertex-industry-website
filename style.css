@@ -316,3 +316,41 @@ header.header {
   border-bottom: 1px solid #333 !important;
   padding-bottom: 15px !important;
 }
+/* Ticker Container (Black Patti) */
+.ticker-wrapper {
+  width: 100%;
+  background-color: #050505; /* Full dark black background */
+  color: #ffffff;
+  overflow: hidden;         /* Peeche ya bahar ka faltu text hide ho jayega */
+  white-space: nowrap;
+  padding: 12px 0;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  position: relative;
+  z-index: 10;
+}
+
+/* Infinite Sliding Motion Track */
+.ticker-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slideTicker 18s linear infinite; /* Speed yahan se adjust kar sakte hain */
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.ticker-track span {
+  padding: 0 15px;
+}
+
+/* Continuously Move Hone Ki Animation (Round Loop) */
+@keyframes slideTicker {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%); /* Continuous smooth loop */
+  }
+}
