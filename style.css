@@ -462,6 +462,36 @@ header.header {
   gap: 30px; /* Text elements ke darmeyan clear space */
   padding-right: 30px; /* Last element (PRIVATE LABEL) aur next set ke pehle element mein bilkul barabar space rakhega */
 }
+/* Container Fix */
+.ticker-wrapper {
+  width: 100vw;
+  max-width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 14px 0;
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  box-sizing: border-box;
+}
+
+/* Track Box */
+.ticker-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: infiniteScroll 22s linear infinite;
+}
+
+/* Content Flex & Gap Fix */
+.ticker-content {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 30px; /* Text elements ke darmeyan clear space */
+  padding-right: 30px; /* Last element (PRIVATE LABEL) aur next set ke pehle element mein bilkul barabar space rakhega */
+}
 
 /* Text & Dot Styling */
 .ticker-content span {
