@@ -299,23 +299,6 @@ header.header {
   display: block !important;
 }
 
-/* Close (X) button inside menu */
-.close-btn {
-  background: transparent !important;
-  border: none !important;
-  color: #ffffff !important;
-  font-size: 24px !important;
-  cursor: pointer !important;
-}
-
-.menu-header {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  color: #888888 !important;
-  border-bottom: 1px solid #333 !important;
-  padding-bottom: 15px !important;
-}
 /* Ticker Section - Black Background & White Text */
 .ticker {
   background-color: #000000 !important; /* بلیک پٹی */
@@ -327,6 +310,7 @@ header.header {
   margin-top: 20px;
   box-sizing: border-box;
 }
+
 .ticker-track {
   display: inline-block;
   white-space: nowrap;
@@ -350,3 +334,4 @@ header.header {
     transform: translateX(-50%);
   }
 }
+
