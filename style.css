@@ -390,3 +390,45 @@ header.header {
     transform: translateX(-50%); /* Moves seamlessly without resetting bugs */
   }
 }
+/* Black Strip Outer Box */
+.ticker-wrapper {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  overflow: hidden; /* Screen se bahar text ko chupa kar overlapping roktay hain */
+  white-space: nowrap; /* Text ko agli line par jaane se roktay hain */
+  padding: 12px 0;
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  box-sizing: border-box;
+}
+
+/* Moving Track Container */
+.ticker-track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: infiniteScroll 20s linear infinite;
+}
+
+/* Individual Content Blocks */
+.ticker-content {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Text ko squeeze ya ek doosre ke upar charhne se rokta hai */
+  gap: 25px; /* Text ke darmeyan space */
+  padding-right: 25px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Smooth Infinite Motion */
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
